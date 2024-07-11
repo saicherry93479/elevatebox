@@ -1,0 +1,51 @@
+{
+  "team": [
+    {
+      "title": "Product Manager",
+      "name": "Sai Charan L",
+      "description": "Competitive Programmer, ACM ICPC Regionalist, Google Summer of Code, YC-funded DailyPe, Educator, superU AI, elevatebox.",
+      "profile": "/team/c1.png",
+      "link": "https://www.linkedin.com/in/charann06/"
+    },
+    {
+      "title": "Software Architect",
+      "name": "Shreyas Mididoddi",
+      "description": "7+ years of experience in project management and team leadership.Tech enthusiast,  Android/Web Development, Rust, Go.",
+      "profile": "/team/c2.png",
+      "link": "https://www.linkedin.com/in/shreyas-mididoddi/"
+    },
+    {
+      "title": "Head of  Design",
+      "name": "Sai Charan T",
+      "description": "4+ years of experience. Blockchain enthusiast, Java, JavaScript, Python, Solidity, SpringBoot, Docker, K8s,  Express, Django.",
+      "profile": "/team/c3.png",
+      "link": "https://www.linkedin.com/in/sai-charan-a59114211/"
+    }
+  ],
+  "process": [
+    {
+      "label": "Consultation",
+      "content": "During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements."
+    },
+    {
+      "label": "Research",
+      "content": "After understanding your requirements, we conduct thorough research on your industry, competitors, and market trends. This helps us identify opportunities and create a strategic plan to achieve your business goals."
+    },
+    {
+      "label": "Implementation",
+      "content": "Once the strategy is finalized, we move on to the implementation phase. This involves executing the marketing plan, including creating content, running campaigns, and optimizing your online presence."
+    },
+    {
+      "label": "Optimization",
+      "content": "Throughout the implementation process, we continuously monitor performance and make necessary adjustments. This ensures that your marketing efforts are always aligned with your goals and deliver the best possible results."
+    },
+    {
+      "label": "Reporting",
+      "content": "We provide regular reports on the progress and outcomes of our marketing activities. These reports offer insights into key metrics and help you understand the impact of our efforts on your business."
+    },
+    {
+      "label": "Improvement",
+      "content": "Based on the insights gained from the reporting phase, we identify areas for improvement and refine our strategies. This iterative process ensures that your marketing remains effective and adaptive to changing market conditions."
+    }
+  ]
+}
