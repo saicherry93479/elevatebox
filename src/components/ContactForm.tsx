@@ -64,7 +64,7 @@ const ContactForm = () => {
       <div id="contact">
         <div className="relative flex text-white flex-col items-center md:flex-row">
           <div className="gap-5 mb-10 mx-auto">
-            <span className="text-4xl sm:text-6xl px-1.5 font-medium text-lime underline underline-offset-8 rounded-md p-2">
+            <span className="text-4xl sm:text-6xl px-1.5 font-medium text-[#013186] underline underline-offset-8 rounded-md p-2">
               Contact
             </span>
           </div>
@@ -130,7 +130,7 @@ const ContactForm = () => {
                 type="submit"
                 className={`w-full rounded-[14px] justify-center  inline-flex ${
                   state.status === 0
-                    ? "bg-lime"
+                    ? "bg-[#013186]"
                     : state.status === 1
                     ? "bg-[#35941b]"
                     : state.status === -1

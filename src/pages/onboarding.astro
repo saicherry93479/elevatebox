@@ -1,0 +1,14 @@
+---
+import Header from "../components/onboarding/Header";
+import OnbaordingScreen from "../components/onboarding/OnbaordingScreen";
+import OnBoardingLayout from '../layouts/OnBoardingLayout.astro';
+
+
+---
+<OnBoardingLayout title="Elevate Box">
+<div class="max-w-screen-lg mx-auto px-4 ">
+    <Header></Header>
+    <OnbaordingScreen client:only></OnbaordingScreen>
+
+</div>
+</OnBoardingLayout>
