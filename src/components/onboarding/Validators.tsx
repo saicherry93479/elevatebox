@@ -27,6 +27,8 @@ export const requiredValidator = (value: any) => {
   return "";
 };
 
+export const SKILLS_SELECT = ["Python", "Javascript"];
+
 export const HEAR_SELECT = ["Web", "Linkedin"];
 export const SCHOOL_SELECT = ["SASTRA UNIVERSITY", "NIT TRICHY"];
 export const COMPANY_SELECT = ["SASTRA UNIVERSITY", "NIT TRICHY"];

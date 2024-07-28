@@ -17,6 +17,7 @@ import {
   LOCATION_TITLE_SELECT,
   MONTH_SELECT,
   SCHOOL_SELECT,
+  SKILLS_SELECT,
   YEAR_SELECT,
 } from "./Validators";
 import DynamicInput from "./DynamicInput";
@@ -230,7 +231,6 @@ const RolesStep: React.FC<{
       onChange={(value) => handleSelectChange("hear", value)}
       name=""
       placeholder="Choose from below"
-      isMulti={true}
     />
     <ResumeUpload />
   </div>
@@ -416,6 +416,15 @@ const SkillsStep: React.FC<{
   <div className="flex flex-col gap-6">
     <OnBoardingCommonHeader header="Let's not forget to show off your skills too." />
     {/* Add skills form fields here */}
+    <CustomSelect
+      label="Skills"
+      options={SKILLS_SELECT}
+      value={formData?.skills}
+      onChange={(value) => handleSelectChange("skills", value)}
+      name=""
+      placeholder="Choose all skills you know"
+      isMulti={true}
+    />
   </div>
 );
 
@@ -809,13 +818,27 @@ const EEOCustomSelectComponent = ({
   label: string;
   options: string[];
 }) => {
+  const [selectedOption, setSelectedOption] = useState<string | null>(null);
+
+  const handleOptionClick = (option: string) => {
+    setSelectedOption(option);
+  };
+
   return (
-    <div className="flex flex-col gap-4 md:flex-row justify-between itemcs-center">
+    <div className="flex flex-col gap-4 md:flex-row justify-between items-center">
       <p>{label}</p>
-      <div className="flex gap-2 md:gap-4 ">
+      <div className="flex gap-2 md:gap-4">
         {options.map((option, index) => (
-          <div className="p-2 min-w-[50px] text-center md:px-6 rounded-md cursor-pointer text-black border border-[1px] border-black bg-transparent hover:bg-black hover:text-white">
-            {option}{" "}
+          <div
+            key={index}
+            className={`p-2 min-w-[50px] text-center md:px-6 rounded-md cursor-pointer border border-[1px] border-black  ${
+              selectedOption === option
+                ? "bg-black text-white"
+                : "hover:bg-black text-black  hover:text-white bg-transparent"
+            }`}
+            onClick={() => handleOptionClick(option)}
+          >
+            {option}
           </div>
         ))}
       </div>
